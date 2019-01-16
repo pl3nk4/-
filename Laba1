@@ -1,0 +1,36 @@
+#include <iostream>
+#include <conio.h>
+ 
+using namespace std;
+    int main()
+{
+    float m,mn,mend,a,b,c,dx,F;
+    cout<<"  a="; cin>>a;
+    cout<<"  b="; cin>>b;
+    cout<<"  c="; cin>>c;
+    cout<<"  mn="; cin>>mn;
+    cout<<"  mend="; cin>>mend;
+    cout<<"  dx="; cin>>dx;
+    cout<<" F"<<endl;
+    
+    for(m=mn; m<=mend; m+=dx) 
+      
+if(c<0 && a!=0)  
+    { 
+        cout<<"  c<0 & a!=0"<<endl;  
+        for(m=mn; m<=mend; m+=dx) 
+        cout<<"  "<<m<<-(a*m*m)<<endl;
+    }
+    if(c>0 && a==0) 
+    {
+        cout<<"  c>0 & a==0"<<endl;
+        for(m=mn; m<=mend; m+=dx) 
+        cout<<"  "<<m<<(a-m)/(m*c)<<endl;
+    }     
+    else for(m=mn; m<=mend; m+=dx) cout<<"  "<<m<< m/c<<endl;
+    
+   
+    getch();
+        system("pause");
+        return 0;  
+}
